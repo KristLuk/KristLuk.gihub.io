@@ -1,0 +1,1079 @@
+/* 1. Pagrindinė svetainės šriftų šeima */
+body {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: hsl(0, 0%, 13%);
+}
+
+/* 2. Antraščių stiliai (H1–H6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+/* Kiekvienai antraštei – skirtingi dydžiai ir spalvos */
+h1 {
+    font-size: 3rem;
+    color: #00ff55;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ff0000;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #0066b2;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #00fff2;
+}
+
+h5 {
+    font-size: 1.3rem;
+    color: #ff00bf;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: #eeff00;
+}
+
+/* 3. Pastraipų stilius (p vizualiai skiriasi nuo antraščių ir šablono) */
+p {
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* ===============================
+   1. Mygtukai
+   =============================== */
+
+button,
+.btn {
+  background-color: #4ca3ff;          /* pagrindinė mygtuko spalva */
+  color: #0f0f0f;                     /* tamsus tekstas */
+  padding: 12px 26px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(76, 163, 255, 0.5);
+}
+
+/* Hover efektas — šviesesnė spalva + didesnis glow */
+button:hover,
+.btn:hover {
+  background-color: #74bbff;
+  box-shadow: 0 0 18px rgba(116, 187, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Paspaustas mygtukas */
+button:active,
+.btn:active {
+  transform: translateY(1px);
+  background-color: #3a8edb;
+  box-shadow: 0 0 8px rgba(76, 163, 255, 0.4);
+}
+
+/* ===========================================
+   NUORODOS (links)
+   Neon cyan + animuotas underline
+=========================================== */
+
+a {
+  color: #34ffb8;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #ff00d4;
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #ff00d4;
+}
+
+
+a:hover::after {
+  width: 100%;
+}
+
+
+a:active {
+  color: #ff00d4;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #e8e8e8;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  margin-bottom: 14px;
+  margin-top: 22px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 46px;
+  color: #00ff9d; 
+  text-shadow: 0 0 10px rgba(76, 163, 255, 0.4);
+}
+
+h2 {
+  font-size: 36px;
+  color: #ff0037; 
+  text-shadow: 0 0 6px rgba(52, 255, 184, 0.3);
+}
+
+h3 {
+  font-size: 30px;
+  color: #6f00ff;
+}
+
+h4 {
+  font-size: 26px;
+  color: #fffb00;
+}
+
+h5 {
+  font-size: 22px;
+  color: #ffb86c; 
+}
+
+h6 {
+  font-size: 18px;
+  color: #7d8bff;
+}
+
+p {
+  font-size: 17px;
+  color: #d5d5d5;
+  letter-spacing: 0.4px;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+
+.section {
+    padding: 80px 0;
+}
+
+
+.section .container > * {
+    margin-bottom: 24px;
+}
+
+
+.section .container > *:last-child {
+    margin-bottom: 0;
+}
+
+/* ===========================================
+   4. Sekcijų išdėstymo atnaujinimas
+   Vienodi tarpai ir vienodas blokų dizainas
+=========================================== */
+
+
+#about, #resume, #portfolio {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+
+#about .container > *,
+#resume .container > *,
+#portfolio .container > * {
+  margin-bottom: 30px;
+}
+
+/* ===========================================
+   TURINIO BLOKAI – bendras stilius
+=========================================== */
+
+.section-box,
+.profile-card,
+.about-content,
+.resume-side,
+.resume-section,
+.portfolio-wrap,
+.service-card {
+  background: rgba(25, 25, 25, 0.7);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 22px rgba(80, 200, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+
+.section-box:hover,
+.profile-card:hover,
+.resume-side:hover,
+.resume-section:hover,
+.portfolio-wrap:hover,
+.service-card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+  box-shadow: 0 0 30px rgba(80, 200, 255, 0.25);
+}
+
+/* ===========================================
+   Sekcijų spalviniai akcentai (kairinė juosta)
+=========================================== */
+
+#about .section-box,
+#about .profile-card,
+#about .about-content {
+  border-left: 4px solid #4ca3ff; 
+}
+
+#resume .section-box,
+#resume .resume-side,
+#resume .resume-section {
+  border-left: 4px solid #e5ff00; 
+}
+
+#portfolio .section-box,
+#portfolio .portfolio-wrap {
+  border-left: 4px solid #45008a; 
+}
+
+
+#portfolio .portfolio-wrap {
+  padding: 15px;
+  border-radius: 12px;
+}
+
+
+.portfolio-container .portfolio-item {
+  margin-bottom: 30px;
+}
+
+#navmenu ul li a {
+  padding: 12px 22px;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #caffff !important;
+  background: rgba(0, 255, 200, 0.10);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 255, 200, 0.25);
+  transition: 0.25s ease-in-out;
+}
+
+#navmenu ul li a:hover {
+  background: rgba(0, 255, 200, 0.25);
+  border-color: #00ffd5;
+  color: #00ffd5 !important;
+  transform: translateX(6px);
+  box-shadow: 0 0 12px rgba(0, 255, 200, 0.4);
+}
+
+#navmenu ul li a.active {
+  background: rgba(255, 0, 90, 0.25);
+  border-color: #ff006a;
+  color: #ff5c9f !important;
+  box-shadow: 0 0 14px rgba(255, 0, 130, 0.45);
+}
+
+
+#navmenu .dropdown ul {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 255, 200, 0.15);
+}
+
+#navmenu .dropdown ul li a:hover {
+  transform: translateX(3px);
+  background: rgba(255, 255, 255, 0.12);
+  color: #00ffd5 !important;
+}
+
+/* =============================================
+   2️⃣ „Į VIRŠŲ“ MYGTUKO (scroll-top) DIZAINAS
+============================================= */
+
+#scroll-top {
+  background: linear-gradient(135deg, #00f2ff, #d400ff);
+  color: #0d0d0d;
+  width: 56px;
+  height: 56px;
+  font-size: 28px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.45);
+  transition: 0.3s ease;
+}
+
+#scroll-top:hover {
+  transform: translateY(-6px) rotate(8deg);
+  box-shadow: 0 0 35px rgba(255, 0, 255, 0.6);
+}
+
+#scroll-top i {
+  color: #000;
+  font-weight: bold;
+}
+
+/* ===============================
+   1️⃣ NENUMERUOTAS SĄRAŠAS (ul)
+   Su neon punk ženklais
+================================ */
+
+.custom-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-ul li {
+  position: relative;
+  padding-left: 28px;
+  margin: 8px 0;
+  font-size: 18px;
+  color: #d5d5d5;
+}
+
+.custom-ul li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00ffd5;
+  font-size: 20px;
+  text-shadow: 0 0 8px #00ffd5;
+}
+
+
+.custom-ul ul li::before {
+  content: "➜";
+  color: #ff00d4;
+  text-shadow: 0 0 8px #ff00d4;
+}
+
+
+/* ===============================
+   2️⃣ NUMERUOTAS SĄRAŠAS (ol)
+   Su CSS skaitikliais
+================================ */
+
+.custom-ol {
+  counter-reset: punkCounter;
+  padding-left: 0;
+  list-style: none;
+}
+
+.custom-ol li {
+  counter-increment: punkCounter;
+  margin: 12px 0;
+  padding-left: 40px;
+  position: relative;
+  color: #e8e8e8;
+  font-size: 18px;
+}
+
+.custom-ol li::before {
+  content: counter(punkCounter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  background: #ff00d4;
+  color: #000;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 28px;
+  box-shadow: 0 0 10px rgba(255,0,212,0.6);
+}
+
+/* ============================================
+   SERVICES LENTELĖ
+============================================ */
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 20px;
+  background: rgba(25,25,25,0.7);
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+
+.services-table thead tr {
+  background: #00ffd5;
+  color: #000;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+
+.services-table th,
+.services-table td {
+  padding: 16px 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+
+.services-table tbody tr:nth-child(odd) {
+  background: rgba(255,255,255,0.05);
+}
+
+.services-table tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.10);
+}
+
+
+.services-table tbody tr:hover {
+  background: rgba(0,255,213,0.15);
+  transition: 0.25s;
+}/* ===========================================
+   MYGTUKAI (buttons)
+   Modern neon style
+=========================================== */
+
+button,
+.btn {
+  background-color: #4ca3ff;
+  color: #0f0f0f;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 0 12px rgba(76, 163, 255, 0.5);
+}
+
+button:hover,
+.btn:hover {
+  background-color: #74bbff;
+  box-shadow: 0 0 18px rgba(116, 187, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+button:active,
+.btn:active {
+  transform: translateY(1px);
+  background-color: #3a8edb;
+  box-shadow: 0 0 8px rgba(76, 163, 255, 0.4);
+}
+
+/* ===========================================
+   NUORODOS (links)
+=========================================== */
+
+a {
+  color: #34ffb8;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: 0.25s ease;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #34ffb8;
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #58ffd3;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:active {
+  color: #1eff9c;
+}
+
+/* ===========================================
+   TYPOGRAPHY
+=========================================== */
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #e8e8e8;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  margin-bottom: 14px;
+  margin-top: 22px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 46px;
+  color: #4ca3ff;
+  text-shadow: 0 0 10px rgba(76, 163, 255, 0.4);
+}
+
+h2 {
+  font-size: 36px;
+  color: #34ffb8;
+  text-shadow: 0 0 6px rgba(52, 255, 184, 0.3);
+}
+
+h3 {
+  font-size: 30px;
+  color: #58d0ff;
+}
+
+h4 {
+  font-size: 26px;
+  color: #c084fc;
+}
+
+h5 {
+  font-size: 22px;
+  color: #ffb86c;
+}
+
+h6 {
+  font-size: 18px;
+  color: #7d8bff;
+}
+
+p {
+  font-size: 17px;
+  color: #d5d5d5;
+  letter-spacing: 0.4px;
+  line-height: 1.85;
+  margin-bottom: 16px;
+}
+
+/* ===========================================
+   SECTION SPACING & CONTENT BLOCK DESIGN
+=========================================== */
+
+#about, #resume, #portfolio {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+#about .container > *, 
+#resume .container > *, 
+#portfolio .container > * {
+  margin-bottom: 30px;
+}
+
+.section-box,
+.profile-card,
+.about-content,
+.resume-side,
+.resume-section,
+.portfolio-wrap,
+.service-card {
+  background: rgba(25, 25, 25, 0.7);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 22px rgba(80, 200, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.section-box:hover,
+.profile-card:hover,
+.resume-side:hover,
+.resume-section:hover,
+.portfolio-wrap:hover,
+.service-card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+  box-shadow: 0 0 30px rgba(80, 200, 255, 0.25);
+}
+
+#about .section-box,
+#about .profile-card,
+#about .about-content {
+  border-left: 4px solid #4ca3ff;
+}
+
+#resume .section-box,
+#resume .resume-side,
+#resume .resume-section {
+  border-left: 4px solid #34ffb8;
+}
+
+#portfolio .section-box,
+#portfolio .portfolio-wrap {
+  border-left: 4px solid #c084fc;
+}
+
+#portfolio .portfolio-wrap {
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.portfolio-container .portfolio-item {
+  margin-bottom: 30px;
+}
+
+/* ===========================================
+   SCROLL TO TOP BUTTON
+=========================================== */
+
+#scroll-top {
+  background: linear-gradient(135deg, #34ffb8, #4ca3ff);
+  color: #0f0f0f;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 0 18px rgba(52, 255, 184, 0.6);
+  transition: 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+#scroll-top:hover {
+  transform: translateY(-6px) rotate(12deg);
+  box-shadow: 0 0 28px rgba(76, 163, 255, 0.9);
+}
+
+#scroll-top i {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* ===========================================
+   NAVBAR
+=========================================== */
+
+.header {
+  background: rgba(20, 20, 20, 0.75) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid rgba(76, 163, 255, 0.25);
+  padding: 12px 0;
+  transition: 0.3s ease;
+}
+
+.header:hover {
+  background: rgba(35, 35, 35, 0.85) !important;
+  border-bottom-color: rgba(52, 255, 184, 0.35);
+}
+
+#navmenu a {
+  color: #d9faff;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  transition: 0.25s ease;
+}
+
+#navmenu a:hover {
+  color: #34ffb8;
+  text-shadow: 0 0 8px rgba(52, 255, 184, 0.6);
+}
+
+#navmenu a.active {
+  color: #4ca3ff !important;
+  text-shadow: 0 0 10px rgba(76, 163, 255, 0.8);
+}
+
+.mobile-nav-toggle {
+  color: #34ffb8 !important;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.mobile-nav-toggle:hover {
+  color: #4ca3ff !important;
+  transform: scale(1.15);
+}
+
+/* ===========================================
+   CUSTOM ORDERED & UNORDERED LISTS
+=========================================== */
+
+.custom-ol {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-ol > li {
+  counter-increment: item;
+  margin-bottom: 12px;
+  padding-left: 40px;
+  position: relative;
+  color: #d5d5d5;
+}
+
+.custom-ol > li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #34ffb8;
+  text-shadow: 0 0 6px rgba(52, 255, 184, 0.6);
+}
+
+.custom-ul {
+  list-style: none;
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.custom-ul li {
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 22px;
+  color: #a9a9a9;
+}
+
+.custom-ul li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4ca3ff;
+  font-size: 16px;
+  text-shadow: 0 0 6px rgba(76, 163, 255, 0.6);
+}
+
+.custom-ul.second li::before {
+  content: "➤";
+  color: #c084fc;
+  text-shadow: 0 0 6px rgba(192, 132, 252, 0.6);
+}
+
+/* ===========================================
+   SERVICES TABLE
+=========================================== */
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgba(25, 25, 25, 0.6);
+}
+
+.services-table thead tr {
+  background: linear-gradient(135deg, #4ca3ff, #34ffb8);
+  color: #0f0f0f;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.services-table th {
+  padding: 14px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.services-table td {
+  padding: 14px;
+  color: #dcdcdc;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.services-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.services-table tbody tr:hover {
+  background: rgba(76, 163, 255, 0.15);
+  transition: 0.25s ease;
+}
+
+.services-table td, 
+.services-table th {
+  width: 33%;
+}
+
+/* ===========================================
+   ANIMACIJOS – keyframes
+=========================================== */
+
+/* Fade-in Section */
+.fade-section {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Social Media Bubbles Base Animation */
+.social-links a {
+  display: inline-block;
+  margin: 0 8px;
+  background: #34ffb8;
+  color: #0f0f0f;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 48px;
+  font-size: 22px;
+  box-shadow: 0 0 12px rgba(52, 255, 184, 0.5);
+  animation: bubbleMove 4s ease-in-out infinite, bubbleShadow 4s ease-in-out infinite;
+}
+
+@keyframes bubbleMove {
+  0%, 100% { transform: translateY(0) scale(1); }
+  25% { transform: translateY(-8px) scale(1.05); }
+  50% { transform: translateY(-12px) scale(1.1); }
+  75% { transform: translateY(-8px) scale(1.05); }
+}
+
+@keyframes bubbleShadow {
+  0%, 100% { box-shadow: 0 0 12px rgba(52, 255, 184, 0.5); }
+  50% { box-shadow: 0 0 22px rgba(52, 255, 184, 0.8); }
+}
+
+/* ---------------------------------
+   VAIVORYKŠTĖ HOVER SOCIAL ICONS
+---------------------------------- */
+
+@keyframes rainbowGlow {
+  0%   { box-shadow: 0 0 10px #ff0000; background: #ff0000; }
+  20%  { box-shadow: 0 0 12px #ff7f00; background: #ff7f00; }
+  40%  { box-shadow: 0 0 14px #ffff00; background: #ffff00; }
+  60%  { box-shadow: 0 0 14px #00ff00; background: #00ff00; }
+  80%  { box-shadow: 0 0 12px #0000ff; background: #0000ff; }
+  100% { box-shadow: 0 0 10px #8b00ff; background: #8b00ff; }
+}
+
+.social-links a:hover {
+  animation: rainbowGlow 1.6s linear infinite !important;
+  transform: scale(1.18) rotate(4deg);
+}
+
+/* ===========================================
+   AI TAG (TEXT BUBBLES) ANIMATION
+=========================================== */
+
+.ai-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 6px;
+  border-radius: 12px;
+  background-color: #4ca3ff;
+  color: #0f0f0f;
+  font-weight: 600;
+  animation: tagColorMove 5s ease-in-out infinite;
+}
+
+@keyframes tagColorMove {
+  0%   { background-color: #4ca3ff; transform: translateX(0) rotate(0deg); }
+  25%  { background-color: #34ffb8; transform: translateX(-3px) rotate(-3deg); }
+  50%  { background-color: #c084fc; transform: translateX(3px) rotate(3deg); }
+  75%  { background-color: #ffb86c; transform: translateX(-2px) rotate(-2deg); }
+  100% { background-color: #4ca3ff; transform: translateX(0) rotate(0deg); }
+}
+
+/* ===========================================
+   RAINBOW PROGRESS BARS
+=========================================== */
+
+@keyframes rainbowBar {
+  0%   { background: #ff0000; }
+  16%  { background: #ff7f00; }
+  33%  { background: #ffff00; }
+  50%  { background: #00ff00; }
+  66%  { background: #0000ff; }
+  83%  { background: #4b0082; }
+  100% { background: #8b00ff; }
+}
+
+/* ===========================================
+   PAGE PRELOADER
+=========================================== */
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #0e0e10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  transition: opacity 0.4s ease;
+}
+
+.loader-dots {
+  display: flex;
+  gap: 12px;
+}
+
+.loader-dots .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #4ca3ff;
+  animation: pulseDots 0.8s infinite alternate ease-in-out;
+}
+
+.loader-dots .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader-dots .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulseDots {
+  0% { transform: scale(0.6); opacity: 0.4; }
+  100% { transform: scale(1.3); opacity: 1; }
+}
+
+body.loaded #preloader {
+  opacity: 0;
+  pointer-events: none;
+}
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #000;          
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: hide 3s forwards;  
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #444;      
+  border-top-color: #fff;      
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hide {
+  90% { opacity: 1; }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+
+  .spinner {
+    animation: none;
+    border-top-color: #ccc;
+  }
+
+  #preloader {
+    animation: none;
+    opacity: 1;
+    visibility: visible;
+    transition: none;
+  }
+}
+.services {
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+
+  background: linear-gradient(135deg, #5ee7df, #b490ca, #ff6b6b);
+  background-size: 300% 300%;
+
+  animation: gradientMove 10s ease infinite;
+  border-radius: 10px;
+}
+
+
+.progress {
+  width: 100%;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0; /* pradžioje tuščias */
+  border-radius: 12px;
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 100%;
+  animation: rainbowMove 3s linear infinite;
+}
+
+/* gradientas juda */
+@keyframes rainbowMove {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 400% 0%; }
+}
+
+/* tikras width animacijos keyframe */
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: var(--bar-value); }
+}
+
+
+@keyframes rainbowText {
+  0% { color: #ff0000; }
+  25% { color: #00ff00; }
+  50% { color: #00ffff; }
+  75% { color: #ff00ff; }
+  100% { color: #ff0000; }
+}
+
+h1, h2, h3 {
+  animation: rainbowText 4s linear infinite;
+}
